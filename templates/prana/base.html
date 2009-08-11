@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" id="init">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Prana, a word/meaning memorization app" />
+    <meta name="robots" content="index, follow" />
+    <title>{% block title %}{% endblock %} | Prana</title>
+    <style type="text/css">
+        body {
+            font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif; color: #333;
+            {% if request.GET.font %}font-size: {{ request.GET.font }}%;{% endif %}
+        }
+        a { color: #e15f00; }
+        #prana-body { {% if request.GET.width %}width: {{ request.GET.width }}px;{% else %}width: 100%;{% endif %} }
+        span.prana-comment p { margin: 8px 0px 0px 15px; }
+        th.prana-head { text-align: left; font-weight: normal; }
+        th.prana-label { text-align: right; }
+        .prana-table td { padding: 5px; }
+    </style>
+    {% block extra_css %}{% endblock %}
+    {% block extra_js %}{% endblock %}
+</head>
+
+<body>
+    <div id="prana-body">
+    {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
+

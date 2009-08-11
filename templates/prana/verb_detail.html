@@ -1,0 +1,21 @@
+{% extends "prana/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ object }}{% endblock %}
+
+{% block content %}
+<p>
+    <strong>{{ object }}</strong>{% if object.meaning %}: {{ object.meaning|capfirst }}{% endif %}
+</p>
+
+{{ object.html_content|safe }}
+
+{% if object.html_comment %}
+    - <em>{% trans "Comment" %}:</em>
+    <span class="prana-comment">{{ object.html_comment|safe }}</span>
+{% endif %}
+
+<p>
+<a href="">{% trans "(Again)" %}</a> | <a href="{% url prana-index %}{{ request_get }}">{% trans "Go to index" %}</a>
+</p>
+{% endblock %}

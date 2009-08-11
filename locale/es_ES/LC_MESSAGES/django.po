@@ -1,0 +1,312 @@
+# Spanish translation for Prana
+# Copyright (C) 2009, Rafa Muñoz Cárdenas
+# This file is distributed under the same license as the Prana package.
+# Rafa Muñoz Cárdenas <bymenda@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: prana\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-11 01:26+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Rafa Muñoz Cárdenas <bymenda@gmail.com>\n"
+"Language-Team: LANGUAGE <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: languages.py:5
+msgid "Arabic"
+msgstr "Árabe"
+
+#: languages.py:6
+msgid "Bengali"
+msgstr "Bengalí"
+
+#: languages.py:7
+msgid "Bulgarian"
+msgstr "Búlgaro"
+
+#: languages.py:8
+msgid "Catalan"
+msgstr "Catalán"
+
+#: languages.py:9
+msgid "Czech"
+msgstr "Checo"
+
+#: languages.py:10
+msgid "Welsh"
+msgstr "Galés"
+
+#: languages.py:11
+msgid "Danish"
+msgstr "Danés"
+
+#: languages.py:12
+msgid "German"
+msgstr "Alemán"
+
+#: languages.py:13
+msgid "Greek"
+msgstr "Griego"
+
+#: languages.py:14
+msgid "English"
+msgstr "Inglés"
+
+#: languages.py:15
+msgid "Spanish"
+msgstr "Español"
+
+#: languages.py:16
+msgid "Estonian"
+msgstr "Estonio"
+
+#: languages.py:17
+msgid "Basque"
+msgstr "Vasco"
+
+#: languages.py:18
+msgid "Persian"
+msgstr "Persa"
+
+#: languages.py:19
+msgid "Finnish"
+msgstr "Finés"
+
+#: languages.py:20
+msgid "French"
+msgstr "Francés"
+
+#: languages.py:21
+msgid "Irish"
+msgstr "Irlandés"
+
+#: languages.py:22
+msgid "Galician"
+msgstr "Gallego"
+
+#: languages.py:23
+msgid "Hungarian"
+msgstr "Húngaro"
+
+#: languages.py:24
+msgid "Hebrew"
+msgstr "Hebreo"
+
+#: languages.py:25
+msgid "Hindi"
+msgstr "Hindi"
+
+#: languages.py:26
+msgid "Croatian"
+msgstr "Croata"
+
+#: languages.py:27
+msgid "Icelandic"
+msgstr "Islandés"
+
+#: languages.py:28
+msgid "Italian"
+msgstr "Italiano"
+
+#: languages.py:29
+msgid "Japanese"
+msgstr "Japonés"
+
+#: languages.py:30
+msgid "Georgian"
+msgstr "Georgiano"
+
+#: languages.py:31
+msgid "Korean"
+msgstr "Koreano"
+
+#: languages.py:32
+msgid "Khmer"
+msgstr "Khmer"
+
+#: languages.py:33
+msgid "Kannada"
+msgstr "Kannada"
+
+#: languages.py:34
+msgid "Latvian"
+msgstr "Letón"
+
+#: languages.py:35
+msgid "Lithuanian"
+msgstr "Lituano"
+
+#: languages.py:36
+msgid "Macedonian"
+msgstr "Macedonio"
+
+#: languages.py:37
+msgid "Dutch"
+msgstr "Holandés"
+
+#: languages.py:38
+msgid "Norwegian"
+msgstr "Noruego"
+
+#: languages.py:39
+msgid "Polish"
+msgstr "Polaco"
+
+#: languages.py:40
+msgid "Portuguese"
+msgstr "Portugués"
+
+#: languages.py:41
+msgid "Romanian"
+msgstr "Rumano"
+
+#: languages.py:42
+msgid "Russian"
+msgstr "Ruso"
+
+#: languages.py:43
+msgid "Slovak"
+msgstr "Eslovaco"
+
+#: languages.py:44
+msgid "Slovenian"
+msgstr "Esloveno"
+
+#: languages.py:45
+msgid "Serbian"
+msgstr "Serbio"
+
+#: languages.py:46
+msgid "Swedish"
+msgstr "Sueco"
+
+#: languages.py:47
+msgid "Tamil"
+msgstr "Tamil"
+
+#: languages.py:48
+msgid "Telugu"
+msgstr "Telugu"
+
+#: languages.py:49
+msgid "Thai"
+msgstr "Tailandés"
+
+#: languages.py:50
+msgid "Turkish"
+msgstr "Turco"
+
+#: languages.py:51
+msgid "Ukrainian"
+msgstr "Ucraniano"
+
+#: languages.py:52
+msgid "Simplified Chinese"
+msgstr "Chino simplificado"
+
+#: languages.py:53
+msgid "Traditional Chinese"
+msgstr "Chino tradicional"
+
+#: models.py:19 models.py:28
+msgid "word"
+msgstr "palabra"
+
+#: models.py:20 models.py:47
+msgid "meaning"
+msgstr "significado"
+
+#: models.py:21 models.py:48
+msgid "language"
+msgstr "lengua"
+
+#: models.py:22 models.py:52
+msgid "comment"
+msgstr "comentario"
+
+#: models.py:22 models.py:52
+msgid "Use Markdown sintax to add a comment to the word"
+msgstr "Use la sintaxis de Markdown para agregar un commentario a la palabra"
+
+#: models.py:24 models.py:54
+msgid "date"
+msgstr "fecha"
+
+#: models.py:29
+msgid "words"
+msgstr "palabras"
+
+#: models.py:46 models.py:58
+msgid "verb"
+msgstr "verbo"
+
+#: models.py:46
+msgid "Use here the infinitive tense, e.g.: To be"
+msgstr "Use aquí la forma en infinitivo. Por ejemplo: To be"
+
+#: models.py:47
+msgid "The infinitive tense in your language, e.g.: Ser o estar"
+msgstr "La forma en infinitivo en su lengua. Por ejemplo: Ser o estar"
+
+#: models.py:49
+msgid "content"
+msgstr "contenido"
+
+#: models.py:50
+msgid ""
+"e.g.: I am [2x Space + Intro] You are [2x Space + Intro] He is... and so "
+"forth. Use Markdown sintax here."
+msgstr ""
+"P.E.: I am [2x espacio + Intro] You are [2x espacio + Intro] He is... etc. "
+"Use la sintaxis de Markdown aquí."
+
+#: models.py:59
+msgid "verbs"
+msgstr "verbos"
+
+#: templates/prana/index.html:5 templates/prana/index.html.py:8
+msgid "All words &amp; verbs"
+msgstr "Todas las palabras y verbos"
+
+#: templates/prana/index.html:10
+msgid "Filter by"
+msgstr "Filtrar por"
+
+#: templates/prana/index.html:11
+msgid "See all"
+msgstr "Ver todo"
+
+#: templates/prana/index.html:15
+msgid "Random"
+msgstr "Aleatorio"
+
+#: templates/prana/index.html:16
+msgid "Word or verb"
+msgstr "Palabra o verbo"
+
+#: templates/prana/index.html:16
+msgid "in"
+msgstr "en"
+
+#: templates/prana/index.html:20
+msgid "Words"
+msgstr "Palabras"
+
+#: templates/prana/index.html:27
+msgid "Verbs"
+msgstr "Verbos"
+
+#: templates/prana/verb_detail.html:14 templates/prana/word_detail.html:12
+msgid "Comment"
+msgstr "Comentario"
+
+#: templates/prana/verb_detail.html:19 templates/prana/word_detail.html:17
+msgid "(Again)"
+msgstr "(Otra vez)"
+
+#: templates/prana/verb_detail.html:19 templates/prana/word_detail.html:17
+msgid "Go to index"
+msgstr "Ir a inicio"

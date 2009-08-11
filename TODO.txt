@@ -1,0 +1,7 @@
+- Remove the "Again" for single word visualization
+- Random for more than one word
+- Pagination of latest words
+- RSS
+- Shortcuts
+- Screenshots
+- Trivial

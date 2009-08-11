@@ -1,0 +1,49 @@
+{% extends "prana/base.html" %}
+{% load i18n %}
+{% load prana_tags %}
+
+{% block title %}{% trans "All words &amp; verbs" %}{% endblock %}
+
+{% block content %}
+<h1>{% if title %}{{ title }}{% else %}{% trans "All words &amp; verbs" %}{% endif %}</h1>
+<p>
+    {% trans "Filter by" %}:<br />
+    <a href="{% url prana-index %}{{ request_get }}">{% trans "See all" %}</a>
+    {% for lang in langs %}| <a href="{% url prana-index-lang lang %}{{ request_get }}">{% lang_name lang %}</a> {% endfor %}
+</p>
+<p>
+
+    <table class="prana-table">
+    <tr>
+        <th class="prana-head">{% trans "Random" %}:</th>
+    </tr>
+    <tr>
+        <th class="prana-label">
+            <a href="{% url prana-random %}{{ request_get }}">{% trans "Word or verb" %}</a> {% trans "in" %}
+        </th>
+        {% for lang in langs %}<td><a href="{% url prana-random-lang lang %}{{ request_get }}">{% lang_name lang %}</a></td>{% endfor %}
+    </tr>
+    <tr>
+        <th class="prana-label">
+            <a href="{% url prana-random-worv "0" %}">{% trans "Word" %}</a> {% trans "in" %}
+        </th>
+        {% for lang in w_langs %}<td><a href="{% url prana-random-lang-worv lang "0" %}{{ request_get }}">{% lang_name lang %}</a></td>{% endfor %}
+    </tr>
+    </table>
+</p>
+
+<h2>{% trans "Words" %}</h2>
+<ul>
+    {% for word in words %}
+    <li><a href="{{ word.get_absolute_url }}{{ request_get }}">{{ word }}</a>: {{ word.meaning|capfirst }}</li>
+    {% endfor %}
+</ul>
+
+<h2>{% trans "Verbs" %}</h2>
+<ul>
+    {% for verb in verbs %}
+    <li><a href="{{ verb.get_absolute_url }}{{ request_get }}">{{ verb }}</a>{% if verb.meaning %}: {{ verb.meaning }}{% endif %}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

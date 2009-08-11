@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models import permalink
 from django.utils.translation import ugettext_lazy as _
+from django.utils.text import capfirst
 from datetime import datetime
 try:
     from markdown import markdown
@@ -28,7 +29,7 @@ class Word(models.Model):
         verbose_name_plural = _("words")
 
     def __unicode__(self):
-        return "%s (%s)" % (self.word, self.get_language_display())
+        return "%s (%s)" % (capfirst(self.word), self.get_language_display())
 
     def save(self):
         self.html_comment = markdown(self.comment)
@@ -36,14 +37,14 @@ class Word(models.Model):
 
     @permalink
     def get_absolute_url(self):
-        pass
+        return ("prana-worddetail", (), {'object_id': self.id})
 
 class Verb(models.Model):
     """
     Verb class
     """
     verb = models.CharField(_("verb"), max_length=80, help_text=_("Use here the infinitive tense, e.g.: To be"))
-    meaning = models.CharField(_("meaning"), max_length=80, help_text=_("The infinitive tense in your language, e.g.: Ser o estar"))
+    meaning = models.CharField(_("meaning"), max_length=80, blank=True, help_text=_("The infinitive tense in your language, e.g.: Ser o estar"))
     language = models.CharField(_("language"), max_length=2, choices=LANGUAGES, default='en')
     content = models.TextField(_("content"), blank=True, \
         help_text=_("e.g.: I am [2x Space + Intro] You are [2x Space + Intro] He is... and so forth. Use Markdown sintax here."))
@@ -58,7 +59,7 @@ class Verb(models.Model):
         verbose_name_plural = _("verbs")
 
     def __unicode__(self):
-        return "%s (%s)" % (self.verb, self.get_language_display())
+        return "%s (%s)" % (capfirst(self.verb), self.get_language_display())
 
     def save(self):
         self.html_content = markdown(self.content)
@@ -67,5 +68,5 @@ class Verb(models.Model):
 
     @permalink
     def get_absolute_url(self):
-        pass
+        return ("prana-verbdetail", (), { 'object_id': self.id })
 
