@@ -17,8 +17,8 @@ anotation.
 
 It was developed on Debian 5.0 Lenny and Django 1.0.2.
 
-Please send comments/suggestions to me XXXXXXXXXXXXXXXXXXXXXXXXX
-Prana code page: http://XXXXXXXXXXXXXXXXXXXXX
+Please send comments/suggestions to http://github.com/Menda/Prana/issues
+Prana code page: http://github.com/Menda/Prana
 
 Hope you like it,
 Rafa Muñoz Cárdenas
@@ -62,7 +62,7 @@ Instalation
 
     1. Clone the code via Git into any existing project or anywhere in your
        python path:
-       git clone XXXXXXXXXXXXXXXXXXXXXXX
+       git clone git://github.com/Menda/Prana.git
 
     2. Now you have 2 options:
 
