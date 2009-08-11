@@ -39,16 +39,16 @@ Prerequisites
       XXXXXXXXXXXXXXXXXXXXXXXXXXX
 
     - Arch Linux:
-      XXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXX
 
     - Gentoo:
-      XXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXX
 
     - Windows:
-      XXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXX
 
     - Mac OS:
-      XXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXX
 
     2. django.contrib.auth and django.contrib.admin have to be in your
     INSTALLED_APPS in settings.py
